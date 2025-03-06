@@ -30,40 +30,21 @@
     color: var(--grisOscuro);
 }
 
-@keyframes slider {
-
-    0%,
-    100% {
-        transform: translateX(0);
-    }
-
-    25% {
-        transform: translateX(-100%);
-    }
-
-    50% {
-        transform: translateX(-200%);
-    }
-
-    75% {
-        transform: translateX(-300%);
-    }
-}
-
 .animate-slider {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+
     img {
         width: 100%;
-        overflow-y: hidden;
+        flex-shrink: 0;
         object-fit: cover;
     }
 
-    display: flex;
-    width: 300%;
-    height: 100%;
-    transition: transform 1s ease-in-out;
+   
 }
 
-/* Puntos activos */
 .active {
-    background-color: gray;
+    background-color: rgb(93, 11, 138) !important;
 }
