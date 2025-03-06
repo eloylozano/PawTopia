@@ -10,8 +10,6 @@ El proyecto está compuesto por varias páginas HTML con su respectivo diseño e
 - **`about.html`** → Historia del refugio y su misión.
 - **`adopt.html`** → Listado de mascotas disponibles para adopción.
 - **`services.html`** → Información sobre servicios como veterinaria, peluquería y tienda.
-- **`comments.html`** → Sección de comentarios con una cuadícula de opiniones.
-- **`contact.html`** → Formulario de contacto.
 
 ## Tecnologías Utilizadas
 
