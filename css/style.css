@@ -79,3 +79,13 @@
 .active {
     background-color: rgb(93, 11, 138) !important;
 }
+
+.opinion {
+    transition: 0.3s ease-in-out;
+}
+
+.opinion:hover {
+    transform: scale(1.05);
+    box-shadow: 20px 20px 20px -15px rgb(0, 0, 0, .5);
+
+}
