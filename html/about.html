@@ -1,120 +1,144 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sobre Nosotros | Pawtopia</title>
-  <link rel="stylesheet" href="../css/about.css">
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros | Pawtopia</title>
+    <link rel="stylesheet" href="../css/about.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-white">
-  <header>
-    <nav class="bg-white shadow-md">
-        <div class="container mx-auto flex justify-between items-center p-4">
-            <div class="text-xl font-bold text-gray-800 flex items-center">
-                <img src="./../img/LogoPurpleGrey.png" alt="Pawtopía" class="h-8 mr-2"> REFUGIO <span
-                    class="text-purple-600">PAWTOPÍA</span>
+    <header class="">
+        <nav class="shadow-md w-full px-12">
+            <div class="mx-auto flex justify-between items-center p-4">
+                <div class="text-xl font-bold text-gray-800 flex items-center m-0">
+                    <img src="../img/Logo/LogoPurpleGrey.png" alt="Pawtopía" class="h-14 mr-2">
+                    <div class="">
+                        <h1 class="font-bold flex flex-col justify-center">
+                            <span class="text-gray-500 font-regular text-sm">REFUGIO</span>
+                            <span class="text-2xl">PAWTOPIA</span>
+                        </h1>
+                    </div>
+                </div>
+                <ul class="hidden md:flex space-x-6 text-gray-600">
+                    <li><a href="../index.html" class="hover:text-purple-600">INICIO</a></li>
+                    <li><a href="#" class="hover:text-purple-600">ABOUT</a></li>
+                    <li><a href="#" class="hover:text-purple-600">MASCOTAS</a></li>
+                    <li><a href="#" class="hover:text-purple-600">SERVICIOS</a></li>
+                    <li><a href="#" class="hover:text-purple-600">CONTACTO</a></li>
+                </ul>
             </div>
-            <ul class="hidden md:flex space-x-6 text-gray-600">
-                <li><a href="#" class="hover:text-purple-600">INICIO</a></li>
-                <li><a href="#" class="hover:text-purple-600">ABOUT</a></li>
-                <li><a href="#" class="hover:text-purple-600">MASCOTAS</a></li>
-                <li><a href="#" class="hover:text-purple-600">SERVICIOS</a></li>
-                <li><a href="#" class="hover:text-purple-600">CONTACTO</a></li>
-            </ul>
-        </div>
-    </nav>
-</header>
+        </nav>
+    </header>
 
-  <section class="bg-purple-50 py-20 text-center">
-    <h1 class="text-4xl font-bold text-purple-700 mb-4">Bienvenidos a Pawtopia</h1>
-    <p class="max-w-2xl mx-auto text-lg">
-      Conectamos corazones y patas para crear nuevas historias llenas de amor.
-    </p>
-  </section>
-
-  <main class="max-w-6xl mx-auto px-4 py-16 space-y-20">
-
-    <section class="grid md:grid-cols-2 gap-16 items-center">
-      <div>
-        <h2 class="text-3xl font-semibold text-gray-600 mb-6">¿Quiénes somos?</h2>
-        <p class="text-justify leading-relaxed mb-4">
-          <strong>Pawtopia</strong> nació en 2020, en un pequeño refugio local, fruto de la pasión de un grupo de voluntarios que compartíamos un mismo sueño: crear un espacio donde cada animal pudiera tener una segunda oportunidad.
+    <section class="bg-purple-50 py-20 text-center">
+        <h1 class="text-4xl font-bold text-purple-700 mb-4">Bienvenidos a Pawtopia</h1>
+        <p class="max-w-2xl mx-auto text-lg">
+            Conectamos corazones y patas para crear nuevas historias llenas de amor.
         </p>
-        <p class="text-justify leading-relaxed mb-4">
-          Lo que empezó como un proyecto modesto de rescate y difusión, pronto creció hasta convertirse en una comunidad dedicada a transformar vidas. Gracias al apoyo de cientos de adoptantes, protectoras y hogares de acogida, hoy somos un referente en adopciones responsables.
-        </p>
-      </div>
-    
-      <div>
-        <img src="./../img/historia-pawtopia.jpg" alt="Historia de Pawtopia" class="rounded-lg shadow-lg object-cover w-full h-full">
-      </div>
     </section>
 
-    <hr class="border-t-2 my-6">
+    <main class="max-w-6xl mx-auto px-4 py-16 space-y-20">
 
-    <section class="text-center mt-8">
-      <h3 class="text-3xl text-gray-600 font-semibold mb-10" id="objetivos">Nuestros objetivos</h3>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6" aria-labelledby="objetivos">
-        
-        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out" role="article" aria-labelledby="card1-title" tabindex="0">
-          <h4 class="text-xl font-semibold text-purple-700 mb-4" id="card1-title">Reducir el abandono animal</h4>
-          <p class="text-gray-600" id="card1-desc">A través de la adopción consciente, ayudamos a disminuir el abandono y promovemos una adopción responsable.</p>
-        </div>
-    
-        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out" role="article" aria-labelledby="card2-title" tabindex="0">
-          <h4 class="text-xl font-semibold text-purple-700 mb-4" id="card2-title">Fortalecer la red de casas de acogida</h4>
-          <p class="text-gray-600" id="card2-desc">Trabajamos para ampliar la red de casas de acogida temporales, brindando refugio a los animales en espera de adopción.</p>
-        </div>
-    
-        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out" role="article" aria-labelledby="card3-title" tabindex="0">
-          <h4 class="text-xl font-semibold text-purple-700 mb-4" id="card3-title">Ofrecer soporte educativo</h4>
-          <p class="text-gray-600" id="card3-desc">Proporcionamos educación sobre bienestar animal, para que todos conozcan cómo cuidar de sus mascotas de manera adecuada.</p>
-        </div>
-    
-        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out" role="article" aria-labelledby="card4-title" tabindex="0">
-          <h4 class="text-xl font-semibold text-purple-700 mb-4" id="card4-title">Crear campañas solidarias</h4>
-          <p class="text-gray-600" id="card4-desc">Llevamos a cabo campañas y eventos benéficos para recaudar fondos y recursos que beneficien a los animales.</p>
-        </div>    
-      </div>
-    </section>
-    
-    
+        <section class="grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-3xl font-semibold text-gray-600 mb-6">¿Quiénes somos?</h2>
+                <p class="text-justify leading-relaxed mb-4">
+                    <strong>Pawtopia</strong> nació en 2020, en un pequeño refugio local, fruto de la pasión de un grupo
+                    de voluntarios que compartíamos un mismo sueño: crear un espacio donde cada animal pudiera tener una
+                    segunda oportunidad.
+                </p>
+                <p class="text-justify leading-relaxed mb-4">
+                    Lo que empezó como un proyecto modesto de rescate y difusión, pronto creció hasta convertirse en una
+                    comunidad dedicada a transformar vidas. Gracias al apoyo de cientos de adoptantes, protectoras y
+                    hogares de acogida, hoy somos un referente en adopciones responsables.
+                </p>
+            </div>
 
-    <section class="text-center space-y-6">
-      <h2 class="text-3xl font-semibold text-gray-600 mb-6">Nuestro impacto</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-        <div class="bg-purple-100 p-6 rounded-lg shadow-lg">
-          <h3 class="text-2xl font-semibold text-purple-700">500+</h3>
-          <p class="text-gray-600">Mascotas adoptadas</p>
-        </div>
-        <div class="bg-purple-100 p-6 rounded-lg shadow-lg">
-          <h3 class="text-2xl font-semibold text-purple-700">12</h3>
-          <p class="text-gray-600">Campañas de esterilización</p>
-        </div>
-        <div class="bg-purple-100 p-6 rounded-lg shadow-lg">
-          <h3 class="text-2xl font-semibold text-purple-700">200</h3>
-          <p class="text-gray-600">Hogares de acogida</p>
-        </div>
-        <div class="bg-purple-100 p-6 rounded-lg shadow-lg">
-          <h3 class="text-2xl font-semibold text-purple-700">50+</h3>
-          <p class="text-gray-600">Voluntarios activos</p>
-        </div>
-      </div>
-    </section>
+            <div>
+                <img src="./../img/historia-pawtopia.jpg" alt="Historia de Pawtopia"
+                    class="rounded-lg shadow-lg object-cover w-full h-full">
+            </div>
+        </section>
 
-    <section class="bg-purple-50 p-8 rounded-lg text-center">
-      <blockquote class="text-2xl italic text-gray-600">
-        "No cambiamos el mundo entero, pero sí el mundo de cada animal que ayudamos."
-      </blockquote>
-    </section>
+        <hr class="border-t-2 my-6">
 
-  </main>
+        <section class="text-center mt-8">
+            <h3 class="text-3xl text-gray-600 font-semibold mb-10" id="objetivos">Nuestros objetivos</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6" aria-labelledby="objetivos">
 
-  <footer class="border-t py-6 text-center text-sm text-gray-500">
-    &copy; 2025 Pawtopia. Todos los derechos reservados.
-  </footer>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out"
+                    role="article" aria-labelledby="card1-title" tabindex="0">
+                    <h4 class="text-xl font-semibold text-purple-700 mb-4" id="card1-title">Reducir el abandono animal
+                    </h4>
+                    <p class="text-gray-600" id="card1-desc">A través de la adopción consciente, ayudamos a disminuir el
+                        abandono y promovemos una adopción responsable.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out"
+                    role="article" aria-labelledby="card2-title" tabindex="0">
+                    <h4 class="text-xl font-semibold text-purple-700 mb-4" id="card2-title">Fortalecer la red de casas
+                        de acogida</h4>
+                    <p class="text-gray-600" id="card2-desc">Trabajamos para ampliar la red de casas de acogida
+                        temporales, brindando refugio a los animales en espera de adopción.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out"
+                    role="article" aria-labelledby="card3-title" tabindex="0">
+                    <h4 class="text-xl font-semibold text-purple-700 mb-4" id="card3-title">Ofrecer soporte educativo
+                    </h4>
+                    <p class="text-gray-600" id="card3-desc">Proporcionamos educación sobre bienestar animal, para que
+                        todos conozcan cómo cuidar de sus mascotas de manera adecuada.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out"
+                    role="article" aria-labelledby="card4-title" tabindex="0">
+                    <h4 class="text-xl font-semibold text-purple-700 mb-4" id="card4-title">Crear campañas solidarias
+                    </h4>
+                    <p class="text-gray-600" id="card4-desc">Llevamos a cabo campañas y eventos benéficos para recaudar
+                        fondos y recursos que beneficien a los animales.</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="text-center space-y-6">
+            <h2 class="text-3xl font-semibold text-gray-600 mb-6">Nuestro impacto</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-purple-100 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-purple-700">500+</h3>
+                    <p class="text-gray-600">Mascotas adoptadas</p>
+                </div>
+                <div class="bg-purple-100 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-purple-700">12</h3>
+                    <p class="text-gray-600">Campañas de esterilización</p>
+                </div>
+                <div class="bg-purple-100 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-purple-700">200</h3>
+                    <p class="text-gray-600">Hogares de acogida</p>
+                </div>
+                <div class="bg-purple-100 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-purple-700">50+</h3>
+                    <p class="text-gray-600">Voluntarios activos</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-purple-50 p-8 rounded-lg text-center">
+            <blockquote class="text-2xl italic text-gray-600">
+                "No cambiamos el mundo entero, pero sí el mundo de cada animal que ayudamos."
+            </blockquote>
+        </section>
+
+    </main>
+
+    <footer class="border-t py-6 text-center text-sm text-gray-500">
+        &copy; 2025 Pawtopia. Todos los derechos reservados.
+    </footer>
 
 </body>
+
 </html>
