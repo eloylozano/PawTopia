@@ -30,13 +30,6 @@
     color: var(--grisOscuro);
 }
 
-.animate-slider {
-    img {
-        height: 100%;
-        overflow: hidden;
-    }
-}
-
 @keyframes slider {
 
     0%,
@@ -55,6 +48,19 @@
     75% {
         transform: translateX(-300%);
     }
+}
+
+.animate-slider {
+    img {
+        width: 100%;
+        overflow-y: hidden;
+        object-fit: cover;
+    }
+
+    display: flex;
+    width: 300%;
+    height: 100%;
+    transition: transform 1s ease-in-out;
 }
 
 /* Puntos activos */
