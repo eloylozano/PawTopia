@@ -22,6 +22,42 @@
     font-family: 'Inter', Sans serif;
 }
 
+.link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.link::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #8b5cf6;
+    /* Color del subrayado */
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    /* Comienza invisible */
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.link:hover::after {
+    transform: scaleX(1);
+    /* El subrayado se extiende al pasar el ratón */
+    transform-origin: bottom left;
+    /* Inicia desde la izquierda */
+}
+
+.link:active::after,
+.link:focus::after {
+    transform: scaleX(1);
+    /* Mantiene el subrayado cuando el enlace está activo */
+    transform-origin: bottom left;
+}
+
 #home {
     background-image: url("../img/Wallpaper.jpg");
 }
@@ -42,7 +78,7 @@
         object-fit: cover;
     }
 
-   
+
 }
 
 .active {
