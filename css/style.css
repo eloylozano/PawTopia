@@ -91,32 +91,16 @@
 }
 
 @media (max-width: 768px) {
-    .slider-servicio {
-        flex-direction: column;
-        height: auto;
+    
+    .services-col{
+        display: flex !important;
+        flex-direction: column !important;
+        height: max-content !important;
     }
-
-    .w-full {
-        width: 100%;
-    }
-
-    .slider-servicio .w-1/2 {
-        width: 100%;
-    }
-
-    .slider-servicio .h-[70vh] {
-        height: auto;
-    }
-
-    .w-full sm\:w-auto {
-        width: 100%;
-    }
-
-    .flex-wrap {
-        flex-wrap: wrap;
-    }
-
-    .w-full sm\:w-1/2 {
-        width: 100%;
+    .slider,
+    .services {
+        width: 100% !important;
+        height: 500px !important;
+          /* Esto asegura que ocupen todo el ancho en pantallas pequeñas */
     }
 }

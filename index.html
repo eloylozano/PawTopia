@@ -85,37 +85,43 @@
             </div>
         </section>
         <section class="max-w-6xl mx-auto px-4 py-16 ">
-            <div class="flex justify-between">
-                <h2 class="text-center font-bold text-3xl header2">Nuestras <span
-                        class=" text-purple-600">mascotas</span></h2>
-                <h2 class="text-center font-bold text-3xl header2">Servicios <span
-                        class=" text-purple-600">Pawtopia</span></h2>
-            </div>
-            <div class="bg-white h-[70vh] py-8 flex gap-8 ">
-                <div class="w-1/2 relative overflow-hidden">
-                    <div class="flex animate-slider">
-                        <img src="/img/gato.jpg" class="rounded-lg" alt="Imagen de un perro">
-                        <img src="img/perro.jpg" class="rounded-lg" alt="Imagen de un gato">
-                        <img src="img/pajaro.jpg" class="rounded-lg" alt="Imagen de un pájaro">
-                        <img src="img/conejos.jpg" class="rounded-lg" alt="Imagen de un conejo">
-                    </div>
-                    <!-- Botones de navegación -->
-                    <button class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-500 text-white p-2"
-                        onclick="moveSlide(-1)">&#10094;</button>
-                    <button class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-500 text-white p-2"
-                        onclick="moveSlide(1)">&#10095;</button>
 
-                    <!-- Puntos indicativos -->
-                    <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-                        <div class="w-2.5 h-2.5 bg-white rounded-full cursor-pointer" onclick="currentSlide(0)"></div>
-                        <div class="w-2.5 h-2.5 bg-white rounded-full cursor-pointer" onclick="currentSlide(1)"></div>
-                        <div class="w-2.5 h-2.5 bg-white rounded-full cursor-pointer" onclick="currentSlide(2)"></div>
-                        <div class="w-2.5 h-2.5 bg-white rounded-full cursor-pointer" onclick="currentSlide(3)"></div>
+            <div class="bg-white h-[70vh] py-8 flex gap-8 services-col">
+                <div class="w-1/2 slider  flex flex-col gap-[25px]">
+                    <h2 class="text-center font-bold text-3xl header2">Nuestras <span
+                            class=" text-purple-600">mascotas</span>
+                    </h2>
+                    <div class="relative overflow-hidden">
+                        <div class="flex animate-slider">
+                            <img src="/img/gato.jpg" class="rounded-lg" alt="Imagen de un perro">
+                            <img src="img/perro.jpg" class="rounded-lg" alt="Imagen de un gato">
+                            <img src="img/pajaro.jpg" class="rounded-lg" alt="Imagen de un pájaro">
+                            <img src="img/conejos.jpg" class="rounded-lg" alt="Imagen de un conejo">
+                        </div>
+                        <!-- Botones de navegación -->
+                        <button class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-500 text-white p-2"
+                            onclick="moveSlide(-1)">&#10094;</button>
+                        <button class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-500 text-white p-2"
+                            onclick="moveSlide(1)">&#10095;</button>
+
+                        <!-- Puntos indicativos -->
+                        <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                            <div class="w-2.5 h-2.5 bg-white rounded-full cursor-pointer" onclick="currentSlide(0)">
+                            </div>
+                            <div class="w-2.5 h-2.5 bg-white rounded-full cursor-pointer" onclick="currentSlide(1)">
+                            </div>
+                            <div class="w-2.5 h-2.5 bg-white rounded-full cursor-pointer" onclick="currentSlide(2)">
+                            </div>
+                            <div class="w-2.5 h-2.5 bg-white rounded-full cursor-pointer" onclick="currentSlide(3)">
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Columna Derecha: Servicios -->
-                <div class="w-1/2 flex flex-col gap-[25px]">
+                <div class="w-1/2 flex flex-col gap-[25px] services">
+                    <h2 class="text-center font-bold text-3xl header2">Servicios <span
+                            class=" text-purple-600">Pawtopia</span></h2>
                     <!-- Veterinario -->
                     <div
                         class="relative group h-1/3 rounded-lg cursor-pointer overflow-hidden transition-all duration-300 hover:h-full hover:z-10">
@@ -125,15 +131,14 @@
                             class="absolute inset-0 bg-purple-600 opacity-50 transition-opacity duration-300 group-hover:opacity-70">
                         </div>
                         <div
-                            class="absolute inset-0 flex items-center justify-center text-xl font-bold text-white transition-opacity duration-300 group-hover:opacity-0">
+                            class="absolute inset-0 flex items-center justify-center text-xl font-bold text-white transition-opacity duration-300 group-hover:opacity-0 text-base sm:text-lg lg:text-xl xl:text-2xl">
                             Veterinario
                         </div>
                         <div
-                            class="absolute inset-0 flex items-center justify-center text-white text-justify text-lg px-12 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                            class="absolute inset-0 flex items-center justify-center text-white text-justify    sm:text-base md:text-lg lg:text-xl px-4 md:px-12 lg:px-16 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                             Nuestro servicio veterinario está diseñado para brindarle a tu mascota la mejor atención
                             médica, con un equipo de profesionales altamente cualificados y un trato cercano y
-                            personalizado. Ofrecemos consultas generales, vacunación, desparasitación, diagnóstico por
-                            imagen, cirugía, hospitalización y planes de salud adaptados a cada etapa de su vida.
+                            personalizado.
                         </div>
                     </div>
 
@@ -146,15 +151,14 @@
                             class="absolute inset-0 bg-purple-600 opacity-50 transition-opacity duration-300 group-hover:opacity-70">
                         </div>
                         <div
-                            class="absolute inset-0 flex items-center justify-center text-xl font-bold text-white transition-opacity duration-300 group-hover:opacity-0">
+                            class="absolute inset-0 flex items-center justify-center text-xl font-bold text-white transition-opacity duration-300 group-hover:opacity-0 text-base sm:text-lg lg:text-xl xl:text-2xl">
                             Peluquería
                         </div>
                         <div
-                            class="absolute inset-0 flex items-center justify-center text-white text-justify text-lg px-12 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                            En nuestra peluquería, tu mascota recibirá un cuidado especial con baños, cortes y
-                            tratamientos adaptados a su tipo de pelo y necesidades. Utilizamos productos de alta calidad
-                            para garantizar su bienestar y belleza. ¡Déjala en manos de expertos y disfruta de un pelaje
-                            limpio y saludable!
+                            class="absolute inset-0 flex items-center justify-center text-white text-justify  sm:text-base md:text-lg lg:text-xl px-4 md:px-12 lg:px-16 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                            En nuestra peluquería, tu mascota recibirá un cuidado especial con baños y tratamientos
+                            adaptados a su tipo de pelo. Usamos productos de alta calidad para garantizar su bienestar y
+                            belleza.
                         </div>
                     </div>
 
@@ -166,18 +170,20 @@
                             class="absolute inset-0 bg-purple-600 opacity-50 transition-opacity duration-300 group-hover:opacity-70">
                         </div>
                         <div
-                            class="absolute inset-0 flex items-center justify-center text-xl font-bold text-white transition-opacity duration-300 group-hover:opacity-0">
+                            class="absolute inset-0 flex items-center justify-center text-xl font-bold text-white transition-opacity duration-300 group-hover:opacity-0 text-base sm:text-lg lg:text-xl xl:text-2xl">
                             Tienda
                         </div>
                         <div
-                            class="absolute inset-0 flex items-center justify-center text-white text-justify text-lg px-12 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                            En nuestra tienda encontrarás todo lo que tu mascota necesita: alimentación, juguetes,
-                            accesorios y productos de cuidado. Contamos con una selección de las mejores marcas para
-                            garantizar su bienestar. Además, visita nuestra tienda online y haz tus compras desde casa
-                            con total comodidad.
+                            class="absolute inset-0 flex items-center justify-center text-white text-justify  sm:text-base md:text-lg lg:text-xl px-4 md:px-12 lg:px-16 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                            En nuestra tienda encontrarás todo lo que tu mascota necesita. Contamos con una selección de
+                            las mejores marcas para garantizar su bienestar. Además, puedes visitar nuestra tienda
+                            online.
                         </div>
                     </div>
                 </div>
+
+
+
 
             </div>
         </section>
@@ -259,7 +265,7 @@
                 saber de ti!</p>
 
             <div class="max-w-4xl w-full md:w-[500px] mx-auto bg-white p-6 md:p-8 rounded-lg shadow-lg">
-                <form action="#" method="POST" class="space-y-6">
+                <form action="#" method="POST" class="space-y-6" id="contact">
                     <!-- Nombre -->
                     <div>
                         <label for="name"
