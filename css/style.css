@@ -90,3 +90,33 @@
 
 }
 
+@media (max-width: 768px) {
+    .slider-servicio {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .w-full {
+        width: 100%;
+    }
+
+    .slider-servicio .w-1/2 {
+        width: 100%;
+    }
+
+    .slider-servicio .h-[70vh] {
+        height: auto;
+    }
+
+    .w-full sm\:w-auto {
+        width: 100%;
+    }
+
+    .flex-wrap {
+        flex-wrap: wrap;
+    }
+
+    .w-full sm\:w-1/2 {
+        width: 100%;
+    }
+}
