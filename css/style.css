@@ -53,6 +53,17 @@
     transform-origin: bottom left;
 }
 
+
+footer .link {
+    transition: 0.25s ease-in-out;
+
+}
+
+footer .link:hover {
+    color: #8b5cf6;
+}
+
+
 #home {
     background-image: url("../img/Wallpaper.jpg");
 }
@@ -91,16 +102,17 @@
 }
 
 @media (max-width: 768px) {
-    
-    .services-col{
+
+    .services-col {
         display: flex !important;
         flex-direction: column !important;
         height: max-content !important;
     }
+
     .slider,
     .services {
         width: 100% !important;
         height: 500px !important;
-          /* Esto asegura que ocupen todo el ancho en pantallas pequeñas */
+        /* Esto asegura que ocupen todo el ancho en pantallas pequeñas */
     }
 }
