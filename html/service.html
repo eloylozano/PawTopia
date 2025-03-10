@@ -1,23 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios · Pawtopia</title>
-    <link rel="stylesheet" href="../css/about.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="shortcut icon" href="/img/Logo/LogoPurpleWhite.png" type="image/x-icon">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/headerFooter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="shortcut icon" href="/img/Logo/LogoPurpleWhite.png" type="image/x-icon">
 </head>
 
 <body>
+    <!-- Header -->
     <header>
         <nav class="shadow-md w-full px-12">
             <div class="mx-auto flex justify-between items-center p-4">
                 <div class="text-xl font-bold text-gray-600 flex items-center m-0">
-                    <a href="../index.html" class="flex">
+                    <a href="index.html" class="flex">
                         <img src="../img/Logo/LogoPurpleGrey.png" alt="Pawtopía" class="h-14 mr-2">
                         <div class="">
                             <h1 class="font-bold flex flex-col justify-center">
@@ -30,11 +31,11 @@
 
                 <!-- Menú para pantallas grandes -->
                 <ul class="hidden md:flex space-x-6 text-gray-600">
-                    <li><a href="../index.html" class="link">INICIO</a></li>
-                    <li><a href="about.html" class="link">ABOUT</a></li>
-                    <li><a href="adopt.html" class="link">MASCOTAS</a></li>
-                    <li><a href="service.html" class="link">SERVICIOS</a></li>
-                    <li><a href="../index.html#contact" class="link">CONTACTO</a></li>
+                    <li><a href="index.html" class="link">INICIO</a></li>
+                    <li><a href="/html/about.html" class="link">ABOUT</a></li>
+                    <li><a href="/html/adopt.html" class="link">MASCOTAS</a></li>
+                    <li><a href="/html/service.html" class="link">SERVICIOS</a></li>
+                    <li><a href="index.html#contact" class="link">CONTACTO</a></li>
                 </ul>
 
                 <!-- Menú hamburguesa para pantallas pequeñas -->
@@ -52,49 +53,115 @@
             <!-- Menú desplegable en pantallas pequeñas -->
             <ul id="mobileMenu"
                 class="hidden md:hidden flex flex-col items-center space-y-4 bg-purple-100 text-gray-600 py-4">
-                <li><a href="../index.html" class="link">INICIO</a></li>
-                <li><a href="about.html" class="link">ABOUT</a></li>
-                <li><a href="adopt.html" class="link">MASCOTAS</a></li>
-                <li><a href="service.html" class="link">SERVICIOS</a></li>
-                <li><a href="../index.html#contact" class="link">CONTACTO</a></li>
+                <li><a href="index.html" class="link">INICIO</a></li>
+                <li><a href="/html/about.html" class="link">ABOUT</a></li>
+                <li><a href="/html/adopt.html" class="link">MASCOTAS</a></li>
+                <li><a href="/html/service.html" class="link">SERVICIOS</a></li>
+                <li><a href="index.html#contact" class="link">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="relative h-[40vh] flex items-center justify-center bg-cover bg-center" style="background-image: url('/img/hero-services.jpg');">
+            <div class="absolute inset-0 bg-purple-600 bg-opacity-50"></div>
+            <div class="container mx-auto text-center relative z-10">
+                <h1 class="text-4xl md:text-5xl font-bold text-white">Nuestros Servicios</h1>
+                <p class="mt-4 text-lg text-gray-200 max-w-2xl mx-auto">
+                    En Pawtopía ofrecemos una variedad de servicios para el cuidado y bienestar de tus mascotas. ¡Conócelos todos!
+                </p>
+            </div>
+        </section>
 
+        <!-- Servicios Section -->
+        <section class="max-w-6xl mx-auto px-4 py-16">
+            <h2 class="text-3xl font-bold text-center text-gray-600 mb-8">Servicios <span class="text-purple-600">Pawtopia</span></h2>
 
-    <main class="max-w-6xl mx-auto px-4 py-16 space-y-20 h-[100vh]">
-        <div class="flex flex-col justify-center items-center h-full">
-            <img src="../img/cat.gif" alt="Cat waiting" class="h-[150px]">
-            <h1 class=" font-bold text-purple-600 text-4xl">PAGE UNDER CONSTRUCTION </h1>
-            <h3 class="font-bold text-gray-700 text-xl">Please, check back later...</h3>
-        </div>
+            <!-- Grid de Servicios -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Servicio 1: Veterinario -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="/img/veterinario.jpg" alt="Veterinario" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-600 mb-2">Veterinario</h3>
+                        <p class="text-gray-600 text-justify">
+                            Nuestro servicio veterinario está diseñado para brindarle a tu mascota la mejor atención médica, con un equipo de profesionales altamente cualificados y un trato cercano y personalizado.
+                        </p>
+                        <a href="#" class="mt-4 inline-block bg-purple-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition duration-300">
+                            Más información
+                        </a>
+                    </div>
+                </div>
 
+                <!-- Servicio 2: Peluquería -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="/img/peluqueria.jpg" alt="Peluquería" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-600 mb-2">Peluquería</h3>
+                        <p class="text-gray-600 text-justify">
+                            En nuestra peluquería, tu mascota recibirá un cuidado especial con baños y tratamientos adaptados a su tipo de pelo. Usamos productos de alta calidad para garantizar su bienestar y belleza.
+                        </p>
+                        <a href="#" class="mt-4 inline-block bg-purple-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition duration-300">
+                            Más información
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Servicio 3: Tienda -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="/img/tienda.jpg" alt="Tienda" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-600 mb-2">Tienda</h3>
+                        <p class="text-gray-600 text-justify">
+                            En nuestra tienda encontrarás todo lo que tu mascota necesita. Contamos con una selección de las mejores marcas para garantizar su bienestar. Además, puedes visitar nuestra tienda online.
+                        </p>
+                        <a href="#" class="mt-4 inline-block bg-purple-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition duration-300">
+                            Más información
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="bg-purple-600 text-white py-16 text-center">
+            <div class="max-w-4xl mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-4">¿Listo para cuidar de tu mascota?</h2>
+                <p class="text-lg mb-8">
+                    En Pawtopía nos preocupamos por el bienestar de tus mascotas. Contáctanos para más información sobre nuestros servicios.
+                </p>
+                <a href="index.html#contact" class="bg-white text-purple-600 font-semibold py-3 px-6 rounded-lg hover:bg-purple-100 transition duration-300">
+                    Contáctanos
+                </a>
+            </div>
+        </section>
     </main>
 
+    <!-- Footer -->
     <footer class="bg-purple-400 text-white">
-        <div
-            class="max-w-6xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <!-- Menú de navegación -->
             <nav class="w-full md:w-auto text-center">
                 <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 text-sm">
-                    <li><a href="../index.html" class="link hover:text-purple-900">INICIO</a></li>
-                    <li><a href="about.html" class="link hover:text-purple-900">ABOUT</a></li>
-                    <li><a href="adopt.html" class="link hover:text-purple-900">MASCOTAS</a></li>
-                    <li><a href="service.html" class="link hover:text-purple-900">SERVICIOS</a></li>
-                    <li><a href="../index.html#contact" class="link hover:text-purple-900">CONTACTO</a></li>
+                    <li><a href="index.html" class="link hover:text-purple-900">INICIO</a></li>
+                    <li><a href="/html/about.html" class="link hover:text-purple-900">ABOUT</a></li>
+                    <li><a href="/html/adopt.html" class="link hover:text-purple-900">MASCOTAS</a></li>
+                    <li><a href="/html/service.html" class="link hover:text-purple-900">SERVICIOS</a></li>
+                    <li><a href="index.html#contact" class="link hover:text-purple-900">CONTACTO</a></li>
                 </ul>
             </nav>
 
             <!-- Redes sociales -->
             <div class="flex space-x-6 text-sm">
-                <a href="#" class="text-white hover:text-purple-900 transition">
+                <a href="#" class="text-white hover:text-purple-600 transition duration-300">
                     <i class="fab fa-facebook-f text-lg"></i>
                 </a>
-                <a href="#" class="text-white hover:text-purple-900 transition">
+                <a href="#" class="text-white hover:text-purple-600 transition duration-300">
                     <i class="fab fa-twitter text-lg"></i>
                 </a>
-                <a href="#" class="text-white hover:text-purple-900 transition">
+                <a href="#" class="text-white hover:text-purple-600 transition duration-300">
                     <i class="fab fa-instagram text-lg"></i>
                 </a>
             </div>
@@ -105,6 +172,8 @@
             &copy; 2025 Pawtopia. Todos los derechos reservados.
         </div>
     </footer>
+
+    <!-- Scripts -->
     <script>
         // Script para mostrar y ocultar el menú hamburguesa
         const hamburger = document.getElementById("hamburger");
