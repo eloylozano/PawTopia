@@ -30,6 +30,7 @@
                     </a>
                 </div>
 
+                <!-- Menú para pantallas grandes -->
                 <ul class="hidden md:flex space-x-6 text-gray-600">
                     <li><a href="../index.html" class="link">INICIO</a></li>
                     <li><a href="about.html" class="link">ABOUT</a></li>
@@ -37,6 +38,8 @@
                     <li><a href="service.html" class="link">SERVICIOS</a></li>
                     <li><a href="../index.html#contact" class="link">CONTACTO</a></li>
                 </ul>
+
+                <!-- Menú hamburguesa para pantallas pequeñas -->
                 <div class="md:hidden flex items-center">
                     <button id="hamburger" class="text-gray-600 focus:outline-none">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
@@ -48,8 +51,9 @@
                 </div>
             </div>
 
+            <!-- Menú desplegable en pantallas pequeñas -->
             <ul id="mobileMenu"
-                class="hidden md:hidden flex flex-col items-center space-y-4 text-gray-600 py-4">
+                class="hidden md:hidden flex flex-col items-center space-y-4 bg-purple-100 text-gray-600 py-4">
                 <li><a href="../index.html" class="link">INICIO</a></li>
                 <li><a href="about.html" class="link">ABOUT</a></li>
                 <li><a href="adopt.html" class="link">MASCOTAS</a></li>
@@ -60,17 +64,142 @@
     </header>
 
 
-    <main class="max-w-6xl mx-auto px-4 py-16 space-y-20 h-[100vh]">
-        <div class="flex flex-col justify-center items-center h-full">
-            <img src="../img/dog.gif" alt="Cat waiting" class="h-[150px]">
-            <h1 class=" font-bold text-purple-600 text-4xl">PAGE UNDER CONSTRUCTION </h1>
-            <h3 class="font-bold text-gray-700 text-xl">Please, check back later...</h3>
-        </div>
+    <main class="bg-purple-50 py-12">
+        <section class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-purple-800 mb-8">Mascotas en adopción</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Mascota 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="/img/img_adopt/perro1.jpeg" alt="Mascota 1" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-purple-800">Max</h3>
+                        <p class="text-gray-600">Macho · 2 años</p>
+                        <p class="text-gray-600 mt-2">Max es un perro juguetón y cariñoso. Le encanta correr y jugar en el parque.</p>
+                    </div>
+                </div>
 
+                <!-- Mascota 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="/img/img_adopt/gato1.jpg" alt="Mascota 2" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-purple-800">Luna</h3>
+                        <p class="text-gray-600">Hembra · 1 año</p>
+                        <p class="text-gray-600 mt-2">Luna es una gata tranquila y curiosa. Le gusta dormir en lugares cálidos.</p>
+                    </div>
+                </div>
+
+                <!-- Mascota 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="/img/img_adopt/perro2.jpeg" alt="Mascota 3" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-purple-800">Rocky</h3>
+                        <p class="text-gray-600">Macho · 3 años</p>
+                        <p class="text-gray-600 mt-2">Rocky es un perro protector y leal. Ideal para familias con niños.</p>
+                    </div>
+                </div>
+
+                <!-- Mascota 4 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="/img/img_adopt/gato2.jpg" alt="Mascota 4" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-purple-800">Mimi</h3>
+                        <p class="text-gray-600">Hembra · 2 años</p>
+                        <p class="text-gray-600 mt-2">Mimi es una gata juguetona y sociable. Le encanta recibir mimos.</p>
+                    </div>
+                </div>
+
+                <!-- Mascota 5 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="/img/img_adopt/pajaro2.jpg" alt="Mascota 5" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-purple-800">Tobias</h3>
+                        <p class="text-gray-600">Macho · 4 años</p>
+                        <p class="text-gray-600 mt-2">Toby es tranquilo y obediente. Perfecto para personas mayores.</p>
+                    </div>
+                </div>
+
+                <!-- Mascota 6 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="/img/img_adopt/gato3.jpg" alt="Mascota 6" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-purple-800">Simba</h3>
+                        <p class="text-gray-600">Macho · 1 año</p>
+                        <p class="text-gray-600 mt-2">Simba es un gato activo y curioso. Le encanta explorar nuevos lugares.</p>
+                    </div>
+                </div>
+
+                <!-- Mascota 7 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="/img/img_adopt/conejo1.jpg" alt="Mascota 7" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-purple-800">Bella</h3>
+                        <p class="text-gray-600">Hembra · 2 años</p>
+                        <p class="text-gray-600 mt-2">Bella es una perra dulce y cariñosa. Ideal para hogares con amor.</p>
+                    </div>
+                </div>
+
+                <!-- Mascota 8 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="/img/img_adopt/pajaro1.jpg" alt="Mascota 8" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-purple-800">Lola y Loli</h3>
+                        <p class="text-gray-600">Hembras · 3 años</p>
+                        <p class="text-gray-600 mt-2">Lola y Loli son dos hermanas tranquilas y afectuosas</p>
+                    </div>
+                </div>
+
+                <!-- Mascota 9 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="/img/img_adopt/perro3.jpeg" alt="Mascota 9" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-purple-800">Rex</h3>
+                        <p class="text-gray-600">Macho · 5 años</p>
+                        <p class="text-gray-600 mt-2">Rex es un perro fuerte y protector. Ideal para hogares con espacio.</p>
+                    </div>
+                </div>
+
+                <!-- Mascota 10 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="/img/img_adopt/pajaro3.jpg" alt="Mascota 10" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-purple-800">Milo</h3>
+                        <p class="text-gray-600">Macho · 20 años</p>
+                        <p class="text-gray-600 mt-2">Milo es un gato juguetón y curioso. Le encanta trepar y explorar.</p>
+                    </div>
+                </div>
+
+                <!-- Mascota 11 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="/img/img_adopt/gato4.jpg" alt="Mascota 11" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-purple-800">Daisy y Maika</h3>
+                        <p class="text-gray-600">Hembra · 3 años</p>
+                        <p class="text-gray-600 mt-2">Daisy y Maika son madre e hija, ambas son dulces y tranquilas</p>
+                    </div>
+                </div>
+
+                <!-- Mascota 12 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="/img/img_adopt/gato5.jpg" alt="Mascota 12" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-purple-800">Nina</h3>
+                        <p class="text-gray-600">Hembra · 1 año</p>
+                        <p class="text-gray-600 mt-2">Nina es una gata activa y juguetona. Le encanta interactuar con personas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer class="bg-purple-100">
+
+
+
+
+
+    >
+    <footer class="bg-purple-400 text-white">
         <div
             class="max-w-6xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <!-- Menú de navegación -->
             <nav class="w-full md:w-auto text-center">
                 <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 text-sm">
                     <li><a href="../index.html" class="link hover:text-purple-900">INICIO</a></li>
@@ -81,26 +210,28 @@
                 </ul>
             </nav>
 
+            <!-- Redes sociales -->
             <div class="flex space-x-6 text-sm">
-                <a href="#" class="hover:text-purple-900 transition" aria-label="Facebook">
+                <a href="#" class="text-white hover:text-purple-900 transition">
                     <i class="fab fa-facebook-f text-lg"></i>
                 </a>
-                <a href="#" class="hover:text-purple-900 transition" aria-label="Twitter">
+                <a href="#" class="text-white hover:text-purple-900 transition">
                     <i class="fab fa-twitter text-lg"></i>
                 </a>
-                <a href="#" class="hover:text-purple-900 transition" aria-label="Instagram">
+                <a href="#" class="text-white hover:text-purple-900 transition">
                     <i class="fab fa-instagram text-lg"></i>
                 </a>
             </div>
-            
         </div>
 
-        <div class="text-whites flex justify-center items-center text-sm bg-purple-800 h-[40px]">
+        <!-- Derechos reservados -->
+        <div class="flex justify-center items-center text-sm bg-purple-800 h-[40px]">
             &copy; 2025 Pawtopia. Todos los derechos reservados.
         </div>
     </footer>
 
     <script>
+        // Script para mostrar y ocultar el menú hamburguesa
         const hamburger = document.getElementById("hamburger");
         const mobileMenu = document.getElementById("mobileMenu");
 
