@@ -79,48 +79,75 @@
         <section class="max-w-6xl mx-auto px-4 py-16">
             <h2 class="text-3xl font-bold text-center text-gray-600 mb-8">Servicios <span class="text-purple-600">Pawtopia</span></h2>
 
-            <!-- Grid de Servicios -->
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Servicio 1: Veterinario -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <img src="/img/veterinario.jpg" alt="Veterinario" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-600 mb-2">Veterinario</h3>
-                        <p class="text-gray-600 text-justify">
-                            Nuestro servicio veterinario está diseñado para brindarle a tu mascota la mejor atención médica, con un equipo de profesionales altamente cualificados y un trato cercano y personalizado.
-                        </p>
-                        <a href="#" class="mt-4 inline-block bg-purple-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition duration-300">
-                            Más información
-                        </a>
-                    </div>
+            <!-- Servicio 1: Veterinario -->
+            <div class="flex flex-col md:flex-row items-center bg-white rounded-lg shadow-lg mb-16">
+                <!-- Imagen a la izquierda -->
+                <div class="w-full md:w-1/2">
+                    <img src="/img/veterinario.jpg" alt="Veterinario" class="w-full h-96 object-cover rounded-t-lg md:rounded-l-lg md:rounded-tr-none">
                 </div>
-
-                <!-- Servicio 2: Peluquería -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <img src="/img/peluqueria.jpg" alt="Peluquería" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-600 mb-2">Peluquería</h3>
-                        <p class="text-gray-600 text-justify">
-                            En nuestra peluquería, tu mascota recibirá un cuidado especial con baños y tratamientos adaptados a su tipo de pelo. Usamos productos de alta calidad para garantizar su bienestar y belleza.
-                        </p>
-                        <a href="#" class="mt-4 inline-block bg-purple-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition duration-300">
-                            Más información
-                        </a>
-                    </div>
+                <!-- Contenido a la derecha -->
+                <div class="w-full md:w-1/2 p-6">
+                    <h3 class="text-2xl font-bold text-gray-600 mb-4">Servicio Veterinario</h3>
+                    <p class="text-gray-600 text-justify mb-4">
+                        Nuestro servicio veterinario está diseñado para brindarle a tu mascota la mejor atención médica. Contamos con un equipo de profesionales altamente cualificados y equipos de última generación para garantizar el bienestar de tu compañero peludo.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 mb-4">
+                        <li>Consultas generales y especializadas.</li>
+                        <li>Vacunación y desparasitación.</li>
+                        <li>Cirugías y tratamientos avanzados.</li>
+                        <li>Atención de emergencias 24/7.</li>
+                    </ul>
+                    <a href="#" class="mt-4 inline-block bg-purple-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition duration-300">
+                        Más información
+                    </a>
                 </div>
+            </div>
 
-                <!-- Servicio 3: Tienda -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <img src="/img/tienda.jpg" alt="Tienda" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-600 mb-2">Tienda</h3>
-                        <p class="text-gray-600 text-justify">
-                            En nuestra tienda encontrarás todo lo que tu mascota necesita. Contamos con una selección de las mejores marcas para garantizar su bienestar. Además, puedes visitar nuestra tienda online.
-                        </p>
-                        <a href="#" class="mt-4 inline-block bg-purple-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition duration-300">
-                            Más información
-                        </a>
-                    </div>
+            <!-- Servicio 2: Peluquería -->
+            <div class="flex flex-col md:flex-row items-center bg-white rounded-lg shadow-lg mb-16">
+                <!-- Contenido a la izquierda -->
+                <div class="w-full md:w-1/2 p-6 order-2 md:order-1">
+                    <h3 class="text-2xl font-bold text-gray-600 mb-4">Peluquería Canina y Felina</h3>
+                    <p class="text-gray-600 text-justify mb-4">
+                        En nuestra peluquería, tu mascota recibirá un cuidado especializado. Utilizamos productos de alta calidad y técnicas profesionales para garantizar su comodidad y belleza.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 mb-4">
+                        <li>Baños con productos hipoalergénicos.</li>
+                        <li>Cortes de pelo personalizados.</li>
+                        <li>Tratamientos para pieles sensibles.</li>
+                        <li>Limpieza de oídos y corte de uñas.</li>
+                    </ul>
+                    <a href="#" class="mt-4 inline-block bg-purple-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition duration-300">
+                        Más información
+                    </a>
+                </div>
+                <!-- Imagen a la derecha -->
+                <div class="w-full md:w-1/2 order-1 md:order-2">
+                    <img src="/img/peluqueria.jpg" alt="Peluquería" class="w-full h-96 object-cover rounded-t-lg md:rounded-r-lg md:rounded-tl-none">
+                </div>
+            </div>
+
+            <!-- Servicio 3: Tienda -->
+            <div class="flex flex-col md:flex-row items-center bg-white rounded-lg shadow-lg mb-16">
+                <!-- Imagen a la izquierda -->
+                <div class="w-full md:w-1/2">
+                    <img src="/img/tienda.jpg" alt="Tienda" class="w-full h-96 object-cover rounded-t-lg md:rounded-l-lg md:rounded-tr-none">
+                </div>
+                <!-- Contenido a la derecha -->
+                <div class="w-full md:w-1/2 p-6">
+                    <h3 class="text-2xl font-bold text-gray-600 mb-4">Tienda de Productos</h3>
+                    <p class="text-gray-600 text-justify mb-4">
+                        En nuestra tienda encontrarás todo lo que tu mascota necesita. Desde alimentos premium hasta juguetes y accesorios, seleccionamos cuidadosamente cada producto para garantizar la mejor calidad.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 mb-4">
+                        <li>Alimentos naturales y orgánicos.</li>
+                        <li>Juguetes y accesorios duraderos.</li>
+                        <li>Productos de higiene y cuidado.</li>
+                        <li>Envíos a domicilio disponibles.</li>
+                    </ul>
+                    <a href="#" class="mt-4 inline-block bg-purple-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition duration-300">
+                        Más información
+                    </a>
                 </div>
             </div>
         </section>
