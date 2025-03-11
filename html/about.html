@@ -28,7 +28,6 @@
                     </a>
                 </div>
 
-                <!-- Menú para pantallas grandes -->
                 <ul class="hidden md:flex space-x-6 text-gray-600">
                     <li><a href="../index.html" class="link">INICIO</a></li>
                     <li><a href="about.html" class="link">ABOUT</a></li>
@@ -37,7 +36,6 @@
                     <li><a href="../index.html#contact" class="link">CONTACTO</a></li>
                 </ul>
 
-                <!-- Menú hamburguesa para pantallas pequeñas -->
                 <div class="md:hidden flex items-center">
                     <button id="hamburger" class="text-gray-600 focus:outline-none">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
@@ -49,9 +47,8 @@
                 </div>
             </div>
 
-            <!-- Menú desplegable en pantallas pequeñas -->
             <ul id="mobileMenu"
-                class="hidden md:hidden flex flex-col items-center space-y-4 bg-purple-100 text-gray-600 py-4">
+                class="hidden md:hidden flex flex-col items-center space-y-4 text-gray-600 py-4">
                 <li><a href="../index.html" class="link">INICIO</a></li>
                 <li><a href="about.html" class="link">ABOUT</a></li>
                 <li><a href="adopt.html" class="link">MASCOTAS</a></li>
@@ -62,7 +59,7 @@
     </header>
 
     <section class=" py-20 text-center relative">
-        <div class="absolute inset-0 bg-cover bg-center h-[230px]" style="background-image: url('../img/banner.png');">
+        <div class="absolute inset-0 bg-cover bg-center h-[230px]" style="background-image: url('../img/banner.avif');">
         </div>
     </section>
     <h1 class="text-4xl font-bold text-purple-700 mb-4 mt-16 relative z-10 text-center">Bienvenidos a Pawtopia</h1>
@@ -90,7 +87,7 @@
             </div>
 
             <div>
-                <img src="./../img/refugio.jpg" alt="Historia de Pawtopia"
+                <img src="./../img/refugio.avif" alt="Historia de Pawtopia"
                     class="rounded-lg shadow-lg object-cover w-full h-full">
             </div>
         </section>
@@ -166,10 +163,9 @@
         </section>
 
     </main>
-    <footer class="bg-purple-400 text-white">
+    <footer class="bg-purple-100">
         <div
             class="max-w-6xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <!-- Menú de navegación -->
             <nav class="w-full md:w-auto text-center">
                 <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 text-sm">
                     <li><a href="../index.html" class="link hover:text-purple-900">INICIO</a></li>
@@ -180,27 +176,25 @@
                 </ul>
             </nav>
 
-            <!-- Redes sociales -->
             <div class="flex space-x-6 text-sm">
-                <a href="#" class="text-white hover:text-purple-900 transition">
+                <a href="#" class="hover:text-purple-900 transition" aria-label="Facebook">
                     <i class="fab fa-facebook-f text-lg"></i>
                 </a>
-                <a href="#" class="text-white hover:text-purple-900 transition">
+                <a href="#" class="hover:text-purple-900 transition" aria-label="Twitter">
                     <i class="fab fa-twitter text-lg"></i>
                 </a>
-                <a href="#" class="text-white hover:text-purple-900 transition">
+                <a href="#" class="hover:text-purple-900 transition" aria-label="Instagram">
                     <i class="fab fa-instagram text-lg"></i>
                 </a>
             </div>
+            
         </div>
 
-        <!-- Derechos reservados -->
-        <div class="flex justify-center items-center text-sm bg-purple-800 h-[40px]">
+        <div class="text-whites flex justify-center items-center text-sm bg-purple-800 h-[40px]">
             &copy; 2025 Pawtopia. Todos los derechos reservados.
         </div>
     </footer>
     <script>
-        // Script para mostrar y ocultar el menú hamburguesa
         const hamburger = document.getElementById("hamburger");
         const mobileMenu = document.getElementById("mobileMenu");
 
